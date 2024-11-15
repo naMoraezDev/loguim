@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SiteLogoProps } from "./types";
-import eCrewLogo from "@/assets/images/e_posts_logo.svg";
 
 export function SiteLogoView({ size = "small" }: SiteLogoProps) {
   return (
@@ -11,13 +9,15 @@ export function SiteLogoView({ size = "small" }: SiteLogoProps) {
         flex items-center relative text-zinc-50
       `}
     >
-      <Image
-        priority
-        src={eCrewLogo}
-        alt="ecrew logo"
-        width={size === "small" ? 24 : 32}
-        height={size === "small" ? 24 : 32}
-      />
+      <span
+        className={`
+          ${size === "small" ? "text-2xl" : "text-3xl"}
+          font-kanit font-bold
+        `}
+      >
+        l0GU.im
+      </span>
+      <span>|</span>
       <span
         className={`
           ${size === "small" ? "text-2xl" : "text-3xl"}
@@ -26,7 +26,7 @@ export function SiteLogoView({ size = "small" }: SiteLogoProps) {
       >
         eCrew
       </span>
-      <Link href="/noticias" className="w-full h-full absolute top-0 left-0" />
+      <Link href="#" className="w-full h-full absolute top-0 left-0" />
     </div>
   );
 }
