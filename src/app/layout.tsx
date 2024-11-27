@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 import { AuthProvider } from "@/contexts/auth";
 import { Inter, Kanit } from "next/font/google";
@@ -21,6 +22,12 @@ const inter = Inter({
   variable: "--font-inter",
   weight: ["400", "500", "700"],
 });
+
+export const metadata: Metadata = {
+  title: "L0GU.im",
+  description:
+    "Faça login na nossa plataforma e acesse conteúdo exclusivo. Insira suas credenciais e aproveite!",
+};
 
 export default function RootLayout({
   children,

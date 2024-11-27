@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { useLogin } from "./_io";
 import { LoginProps } from "./types";
+import { SiteLogo } from "@/ui/site-logo";
 import { SignInForm } from "@/ui/sign-in-form";
 import { SignUpForm } from "@/ui/sign-up-form";
 import { SocialLogin } from "@/ui/social-login";
 import background2 from "@/assets/images/r6-background.jpg";
 import background1 from "@/assets/images/lol-background.jpg";
-import { SiteLogo } from "@/ui/site-logo";
 
 export function LoginView({ isDesktop }: LoginProps) {
   const { method, setMethod } = useLogin();
