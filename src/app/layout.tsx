@@ -1,12 +1,9 @@
 import "./globals.css";
-import Script from "next/script";
 import NextTopLoader from "nextjs-toploader";
 import { AuthProvider } from "@/contexts/auth";
 import { Inter, Kanit } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { LoadingProvider } from "@/contexts/loading";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const kanit = Kanit({
   preload: true,
@@ -35,12 +32,6 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="rgb(9 9 11)" />
         <meta name="google-adsense-account" content="ca-pub-5836460971552859" />
-        <Script
-          async
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5836460971552859"
-        />
       </head>
       <body
         className={`${kanit.variable} ${inter.variable} antialiased font-inter text-gray-50 bg-zinc-950`}

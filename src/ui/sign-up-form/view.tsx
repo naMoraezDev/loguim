@@ -21,7 +21,7 @@ export function SignUpFormView({ setMethod }: SignUpFormProps) {
       className="flex flex-col gap-4 animate-fade-in relative"
     >
       <span className="text-base font-kanit w-full flex justify-center">
-        Crie sua conta
+        Cadastre-se
       </span>
       <div className="w-full flex flex-col gap-3">
         <CustomInput

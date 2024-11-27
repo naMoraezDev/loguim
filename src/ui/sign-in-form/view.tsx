@@ -21,7 +21,7 @@ export function SignInFormView({ setMethod }: SignInFormProps) {
       className="flex flex-col gap-6 animate-fade-in"
     >
       <span className="text-base font-kanit w-full flex justify-center">
-        Faça login na sua conta
+        Faça login com sua conta
       </span>
       <div className="w-full flex flex-col gap-3">
         <CustomInput
@@ -39,7 +39,7 @@ export function SignInFormView({ setMethod }: SignInFormProps) {
           error={formState.errors.password}
         />
         <Link
-          href="/login/esqueci-minha-senha"
+          href="/oauth2/forgot-password"
           className="text-xs font-kanit underline-offset-2 underline"
         >
           Esqueci minha senha
